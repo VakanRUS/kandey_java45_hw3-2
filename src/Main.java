@@ -4,9 +4,9 @@ public class Main {
         System.out.println("task 1");
         byte clientOS = 1; //(0 — iOS, 1 — Android)
         if (clientOS == 1) {
-            System.out.println("Клиент использует Android");
+            System.out.println("Установите версию приложения для Android по ссылке");
         } else if (clientOS == 0) {
-            System.out.println("Клиент использует iOS");
+            System.out.println("Установите версию приложения для iOS по ссылке");
         } else {
             System.out.println("Неизвестный тип операционной системы");
         }
@@ -21,7 +21,7 @@ public class Main {
             System.out.println("Установите обычную версию приложения для Android по ссылке");
         } else if (clientOS == 0 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-        } else if (clientOS == 0 && clientDeviceYear >= 2015){
+        } else if (clientOS == 0 && clientDeviceYear >= 2015) {
             System.out.println("Установите обычную версию приложения для iOS по ссылке");
         } else System.out.println("Неизвестный тип операционной системы");
         System.out.println();
@@ -34,17 +34,18 @@ public class Main {
         } else if (year < 1584) {
             System.out.println("Тогда не было понятия високосных годов");
         } else {
-            System.out.println("Год не является високосным");}
+            System.out.println("Год не является високосным");
+        }
         System.out.println();
 
         //task 4
         System.out.println("task 4");
         int deliveryDistance = 95;
-                if (deliveryDistance < 20){
+        if (deliveryDistance < 20) {
             System.out.println("Потребуется дней: " + 1);
-        } else if (deliveryDistance > 20 && deliveryDistance<60) {
+        } else if (deliveryDistance > 20 && deliveryDistance < 60) {
             System.out.println("Потребуется дней: " + 2);
-        } else if (deliveryDistance > 60 && deliveryDistance<100) {
+        } else if (deliveryDistance > 60 && deliveryDistance < 100) {
             System.out.println("Потребуется дней: " + 3);
         } else {
             System.out.println("Дставки нет");
@@ -54,7 +55,7 @@ public class Main {
         // task 5
         System.out.println("task 5");
         byte monthNumber = 12;
-        switch (monthNumber){
+        switch (monthNumber) {
             case 1:
             case 2:
             case 12:
